@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9e3e305187ec9464caf443680d79f5d5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 163581
+  packageName: Old Bunker
+  packageVersion: 1.2
+  assetPath: Assets/Old Bunker/MouseLook.cs
+  uploadId: 477292

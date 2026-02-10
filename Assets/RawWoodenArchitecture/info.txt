@@ -1,0 +1,4 @@
+Door opening and closing for models:
+- Cabinet02wOD, Cabinet03wOD, Cabinet04wOD
+The models listed above have child objects ( ...doorR, ...doorL ).
+To open and close them, select the appropriate door from the scnene view or from Hierarchy Tab and rotate it in the Y axis using the rotation tool with the tool handle set on Pivot.

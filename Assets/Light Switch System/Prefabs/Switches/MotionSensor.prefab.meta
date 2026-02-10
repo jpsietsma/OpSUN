@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9135b80a0e352ee47b81b03b1d33abf5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/MotionSensor.prefab
+  uploadId: 761627

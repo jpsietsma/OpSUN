@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 00bb436695cf1004ebde7b962a180bd8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/LightModels/CircularLight.prefab
+  uploadId: 761627

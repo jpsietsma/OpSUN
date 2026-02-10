@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8cb0a02d7af92574da7f147449cf374a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Animations/FrankAniOff.anim
+  uploadId: 761627

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0ef7a1197636a3d479b17893569604d4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/ButtonSwitch.prefab
+  uploadId: 761627

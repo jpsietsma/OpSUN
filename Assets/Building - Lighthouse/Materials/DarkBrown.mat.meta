@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8432d340d39f4941b70efcc5f948747
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153000
+  packageName: Lighthouse with interiors -Realistic
+  packageVersion: 1.0
+  assetPath: Assets/Lighthouse01/Materials/DarkBrown.mat
+  uploadId: 326967

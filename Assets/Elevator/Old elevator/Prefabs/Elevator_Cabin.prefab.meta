@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 923c78ba85e80d34eb97552a9b8bcb50
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211815
+  packageName: Old elevator
+  packageVersion: 1.0
+  assetPath: Assets/merlush/Old elevator/Prefabs/Elevator_Cabin.prefab
+  uploadId: 478164

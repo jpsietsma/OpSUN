@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6d765bc02f6764e43a99ddf8c802fbfb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 171333
+  packageName: Fake Terminal - An in-game MS-DOS style PC
+  packageVersion: 1.01
+  assetPath: Assets/ProceduralImagination/FakeTerminal/Prefabs/Demo_FakeTerminalModel.prefab
+  uploadId: 386299

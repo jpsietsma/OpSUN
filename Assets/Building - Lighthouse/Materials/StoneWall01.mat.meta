@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: baa6a03c4dd5f6c4b91e680d65d0d002
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153000
+  packageName: Lighthouse with interiors -Realistic
+  packageVersion: 1.0
+  assetPath: Assets/Lighthouse01/Materials/StoneWall01.mat
+  uploadId: 326967

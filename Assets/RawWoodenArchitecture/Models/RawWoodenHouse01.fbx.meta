@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 6592c8b5674873041b4c043af07d5e42
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cabinet02
+    100002: Chair03
+    100004: //RootNode
+    100006: ChoppingTrunk
+    100008: CoatHanger
+    100010: FrontWindowL
+    100012: FrontWindowR
+    100014: LowerDoor
+    100016: MainDoor
+    100018: RearWindowL
+    100020: RearWindowR
+    100022: SideWindowL
+    100024: SideWindowR
+    100026: StockOfFirewood
+    100028: StockOfFireWoodSmall
+    100030: Table06
+    100032: WoodenFence
+    100034: WoodenHouse01
+    100036: WoodenWicket
+    400000: Cabinet02
+    400002: Chair03
+    400004: //RootNode
+    400006: ChoppingTrunk
+    400008: CoatHanger
+    400010: FrontWindowL
+    400012: FrontWindowR
+    400014: LowerDoor
+    400016: MainDoor
+    400018: RearWindowL
+    400020: RearWindowR
+    400022: SideWindowL
+    400024: SideWindowR
+    400026: StockOfFirewood
+    400028: StockOfFireWoodSmall
+    400030: Table06
+    400032: WoodenFence
+    400034: WoodenHouse01
+    400036: WoodenWicket
+    2100000: Material
+    2300000: Cabinet02
+    2300002: Chair03
+    2300004: ChoppingTrunk
+    2300006: CoatHanger
+    2300008: FrontWindowL
+    2300010: FrontWindowR
+    2300012: LowerDoor
+    2300014: MainDoor
+    2300016: RearWindowL
+    2300018: RearWindowR
+    2300020: SideWindowL
+    2300022: SideWindowR
+    2300024: StockOfFirewood
+    2300026: StockOfFireWoodSmall
+    2300028: Table06
+    2300030: WoodenFence
+    2300032: WoodenHouse01
+    2300034: WoodenWicket
+    3300000: Cabinet02
+    3300002: Chair03
+    3300004: ChoppingTrunk
+    3300006: CoatHanger
+    3300008: FrontWindowL
+    3300010: FrontWindowR
+    3300012: LowerDoor
+    3300014: MainDoor
+    3300016: RearWindowL
+    3300018: RearWindowR
+    3300020: SideWindowL
+    3300022: SideWindowR
+    3300024: StockOfFirewood
+    3300026: StockOfFireWoodSmall
+    3300028: Table06
+    3300030: WoodenFence
+    3300032: WoodenHouse01
+    3300034: WoodenWicket
+    4300000: WoodenFence
+    4300002: WoodenWicket
+    4300004: WoodenHouse01
+    4300006: LowerDoor
+    4300008: MainDoor
+    4300010: Table06
+    4300012: Chair03
+    4300014: CoatHanger
+    4300016: ChoppingTrunk
+    4300018: Cabinet02
+    4300020: StockOfFireWoodSmall
+    4300022: StockOfFirewood
+    4300024: FrontWindowL
+    4300026: FrontWindowR
+    4300028: SideWindowL
+    4300030: SideWindowR
+    4300032: RearWindowL
+    4300034: RearWindowR
+    6400000: Cabinet02
+    6400002: Chair03
+    6400004: ChoppingTrunk
+    6400006: CoatHanger
+    6400008: FrontWindowL
+    6400010: FrontWindowR
+    6400012: LowerDoor
+    6400014: MainDoor
+    6400016: RearWindowL
+    6400018: RearWindowR
+    6400020: SideWindowL
+    6400022: SideWindowR
+    6400024: StockOfFirewood
+    6400026: StockOfFireWoodSmall
+    6400028: Table06
+    6400030: WoodenFence
+    6400032: WoodenHouse01
+    6400034: WoodenWicket
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 70
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164825
+  packageName: Raw Wooden Architecture Pack
+  packageVersion: 1.2
+  assetPath: Assets/RawWoodenArchitecture/Models/RawWoodenHouse01.fbx
+  uploadId: 535887

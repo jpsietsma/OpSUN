@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b87ea1070bcf9fc429898ff094a399a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 610b3bb68ab2b804a9bc6d89f4d20427, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Scripts/LightSwitchMasterControl.cs
+  uploadId: 761627

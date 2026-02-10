@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b6ce8c91b46ad214988195d2b99e66f8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/ModernSwitch2.prefab
+  uploadId: 761627

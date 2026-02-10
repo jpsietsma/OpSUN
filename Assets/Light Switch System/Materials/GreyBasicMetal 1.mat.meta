@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cebe42ba664280e458d17145c46b5742
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Materials/GreyBasicMetal 1.mat
+  uploadId: 761627

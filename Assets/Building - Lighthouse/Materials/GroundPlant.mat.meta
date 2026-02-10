@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0d72f6ca5b7251d498cf386960e27435
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153000
+  packageName: Lighthouse with interiors -Realistic
+  packageVersion: 1.0
+  assetPath: Assets/Lighthouse01/Materials/GroundPlant.mat
+  uploadId: 326967

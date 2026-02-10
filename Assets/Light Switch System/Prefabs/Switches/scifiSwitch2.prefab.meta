@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 388f9ee06d7f90a4aaf41e1aea8fc5be
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/scifiSwitch2.prefab
+  uploadId: 761627

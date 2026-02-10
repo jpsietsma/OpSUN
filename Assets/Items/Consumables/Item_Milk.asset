@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0f1cbf17d134f4488e686dcd3ff5fd, type: 3}
+  m_Name: Item_Milk
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
+  displayName: Milk Carton
+  icon: {fileID: 21300000, guid: 51783f82d42d80a4995444a5e4d4e25b, type: 3}
+  itemType: 0
+  equipSlot: 0
+  maxStack: 10
+  description: A carton of fresh milk, it's nearly full.
+  extraSlots: 0
+  worldPrefab: {fileID: 9195693843226859325, guid: 07c2c1f652e548e49b00d1b238bc37d5, type: 3}
+  worldTint: {r: 1, g: 1, b: 1, a: 1}
+  healthBuff: 10
+  healthDebuff: 0
+  hungerBuff: 0
+  hungerDebuff: 0
+  thirstBuff: 50
+  thirstDebuff: 0
+  staminaBuff: 20
+  staminaDebuff: 0

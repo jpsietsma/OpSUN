@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 71201711a652add438cbea6cb1fdecbc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/LightModels/airplaneLight.prefab
+  uploadId: 761627

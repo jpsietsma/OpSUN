@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa7d0918eb74eff4f9e13367c0c33e3e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Materials/white glow.mat
+  uploadId: 761627

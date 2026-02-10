@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 024eaa094423ac744a51a0c65cc7262a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/FrankensteinSwitch2.prefab
+  uploadId: 761627

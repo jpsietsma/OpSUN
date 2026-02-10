@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4554279791d1bd44ab94c86d8bc01f87, type: 3}
+  m_Name: LoadingTip_Bears
+  m_EditorClassIdentifier: Assembly-CSharp::LoadingTipDefinition
+  title: Don't Mess with Bears
+  tipText: The island is home to many wildlife, including bears. They absolutely
+    WILL fuck you up, given the chance.  Hunt with caution.
+  tipSprite: {fileID: 21300000, guid: f69f00f4a2321f445a42ce010f076699, type: 3}
+  enabledForRandom: 1

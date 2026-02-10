@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ce511f703990cd04385c741871b1b500
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Materials/scifiPannelOn.mat
+  uploadId: 761627

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 41bd3cb29010dc64d8d6f2a76c2c420b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Animations/FrankensteinToggleAnimOff.anim
+  uploadId: 761627

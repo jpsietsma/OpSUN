@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 60d568a2fcf6ea64b86d2bb24daed207
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 171333
+  packageName: Fake Terminal - An in-game MS-DOS style PC
+  packageVersion: 1.01
+  assetPath: Assets/ProceduralImagination/FakeTerminal/Scripts/FakeTerminal.cs
+  uploadId: 386299

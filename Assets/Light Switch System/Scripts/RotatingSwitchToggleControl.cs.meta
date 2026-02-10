@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b583523eb2c941c4a9fdc5ed26a10c36
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Scripts/RotatingSwitchToggleControl.cs
+  uploadId: 761627

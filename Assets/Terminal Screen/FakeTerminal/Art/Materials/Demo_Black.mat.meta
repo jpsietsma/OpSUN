@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69d684dc178964445b552fd51a6cd853
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 171333
+  packageName: Fake Terminal - An in-game MS-DOS style PC
+  packageVersion: 1.01
+  assetPath: Assets/ProceduralImagination/FakeTerminal/Art/Materials/Demo_Black.mat
+  uploadId: 386299

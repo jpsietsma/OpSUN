@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 492f42f148d4d444789995549587a396
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147902
+  packageName: ShippingContainer
+  packageVersion: 1.0
+  assetPath: Assets/Shipping Container/Scenes/PlayerController/PlayerController.cs
+  uploadId: 315788

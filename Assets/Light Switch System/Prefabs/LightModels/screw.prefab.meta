@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0ef9c547470fd5d42831c543a3d62ec8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/LightModels/screw.prefab
+  uploadId: 761627

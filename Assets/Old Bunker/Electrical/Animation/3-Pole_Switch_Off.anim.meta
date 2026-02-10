@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 296cdf1025b8acf4eb89e988ca91739d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 163581
+  packageName: Old Bunker
+  packageVersion: 1.2
+  assetPath: Assets/Old Bunker/Electrical/Animation/3-Pole_Switch_Off.anim
+  uploadId: 477292

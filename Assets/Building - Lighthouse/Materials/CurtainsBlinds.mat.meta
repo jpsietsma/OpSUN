@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d8b4d46b4d801b408d40f8c1a517f7d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153000
+  packageName: Lighthouse with interiors -Realistic
+  packageVersion: 1.0
+  assetPath: Assets/Lighthouse01/Materials/CurtainsBlinds.mat
+  uploadId: 326967

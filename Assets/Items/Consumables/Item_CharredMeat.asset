@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0f1cbf17d134f4488e686dcd3ff5fd, type: 3}
+  m_Name: Item_CharredMeat
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
+  displayName: Charred Meat
+  icon: {fileID: 21300000, guid: 4b79bb9525e92b84dac0aba9b32e6da4, type: 3}
+  itemType: 0
+  equipSlot: 0
+  maxStack: 5
+  description: An overdone piece of meat, there might be some nutrients left in there
+    somewhere...
+  extraSlots: 0
+  worldPrefab: {fileID: 8680720949364892852, guid: 8254e8064fc078e4f8ece3777ce1f68f, type: 3}
+  worldTint: {r: 1, g: 1, b: 1, a: 1}
+  healthBuff: 0
+  healthDebuff: 0
+  hungerBuff: 5
+  hungerDebuff: 0
+  thirstBuff: 0
+  thirstDebuff: 10
+  staminaBuff: 0
+  staminaDebuff: 0

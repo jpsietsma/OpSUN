@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 43e7e2fe0a77fa445a2ebf7533a6e165
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Scripts/PressSwitchControl.cs
+  uploadId: 761627

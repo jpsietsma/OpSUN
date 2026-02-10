@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f6a43bef66d03034ea4df1ed3ef9a21a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/ExampleSceneElements/Prefabs/Player.prefab
+  uploadId: 761627

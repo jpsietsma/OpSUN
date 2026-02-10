@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4688d1f417ec20488f6a3d8c5140d5a, type: 3}
+  m_Name: Recipe_WoodenSpear
+  m_EditorClassIdentifier: Assembly-CSharp::ItemRecipe
+  itemDefinition: {fileID: 11400000, guid: 38b8b83fde6e1b14b9269bc495e4047d, type: 2}
+  craftingTime: 15
+  itemsProduced: 1
+  minCraftingLevel: 1
+  resource1: {fileID: 11400000, guid: a8b8804b481e65b4b8b1f0120e73df1b, type: 2}
+  amount1: 2
+  resource2: {fileID: 11400000, guid: 22ffd61a0e5d01d428ce82a67d8982aa, type: 2}
+  amount2: 1
+  resource3: {fileID: 11400000, guid: 5a596eb6ec069ba48bd19486ea4cf6f0, type: 2}
+  amount3: 1
+  resource4: {fileID: 0}
+  amount4: 0
+  resource5: {fileID: 0}
+  amount5: 0

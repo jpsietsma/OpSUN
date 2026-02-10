@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cf82eb80aa7b09a498cd6091a521f431
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/LightModels/modernLight.prefab
+  uploadId: 761627

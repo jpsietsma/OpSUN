@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0f1cbf17d134f4488e686dcd3ff5fd, type: 3}
+  m_Name: Item_SpoiledMeat
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
+  displayName: Spoiled Meat
+  icon: {fileID: 21300000, guid: e99fe9f72d5e0c141859667b76194f43, type: 3}
+  itemType: 0
+  equipSlot: 0
+  maxStack: 5
+  description: Meat that looks... questionable? This ain't from Matt'y Traeger Shack,
+    that's for sure.
+  extraSlots: 0
+  worldPrefab: {fileID: 3871149023461614932, guid: c1bfefd391c35e3499295546893eb16e, type: 3}
+  worldTint: {r: 1, g: 1, b: 1, a: 1}
+  healthBuff: 0
+  healthDebuff: 0
+  hungerBuff: 0
+  hungerDebuff: 50
+  thirstBuff: 0
+  thirstDebuff: 50
+  staminaBuff: 0
+  staminaDebuff: 50

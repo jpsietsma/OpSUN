@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2272b04db3143824da1aa260c887b257
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 163581
+  packageName: Old Bunker
+  packageVersion: 1.2
+  assetPath: Assets/Old Bunker/FPSInput.cs
+  uploadId: 477292

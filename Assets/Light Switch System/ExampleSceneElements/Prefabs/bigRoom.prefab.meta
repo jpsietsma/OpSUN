@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 73d6e6a511dda5c47b9142fd4f1e1345
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/ExampleSceneElements/Prefabs/bigRoom.prefab
+  uploadId: 761627

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a9fd2b404a5a01442952fe911f62d8da
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147902
+  packageName: ShippingContainer
+  packageVersion: 1.0
+  assetPath: Assets/Shipping Container/Scenes/ShippingContainerDemo.unity
+  uploadId: 315788

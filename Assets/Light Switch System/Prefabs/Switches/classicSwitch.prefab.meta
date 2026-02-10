@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5841386b051825d458c21534a1fe263b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254516
+  packageName: Light Switch System
+  packageVersion: 1.1.0
+  assetPath: Assets/Light Switch System/Prefabs/Switches/classicSwitch.prefab
+  uploadId: 761627
