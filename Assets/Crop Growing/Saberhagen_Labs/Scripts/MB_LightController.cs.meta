@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 767c0a907a0da0e4590e78e561f83a62
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 254836
+  packageName: Handpainted Crops
+  packageVersion: 1.0
+  assetPath: Assets/Saberhagen_Industries/Saberhagen_Labs/Scripts/MB_LightController.cs
+  uploadId: 596921

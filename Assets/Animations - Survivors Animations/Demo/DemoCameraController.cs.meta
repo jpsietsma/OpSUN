@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6f4cadc2fc202c24db06fa915abe0bf3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293325
+  packageName: 100+ Survivors Animations
+  packageVersion: 1.0.0
+  assetPath: Assets/100+ Survivors Animations/Demo/DemoCameraController.cs
+  uploadId: 690907
