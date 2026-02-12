@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b808fff6d7031e74c926bbfb653d0e48, type: 3}
+  m_Name: Crop_Wheat
+  m_EditorClassIdentifier: Assembly-CSharp::CropDefinition
+  stagePrefabs:
+  - {fileID: 2871538734686519944, guid: e15aa8a6f9f85e04b95848a9077a73c7, type: 3}
+  - {fileID: 631622954086246444, guid: a34f19c19c63c4f4d9c83d154fdfa888, type: 3}
+  - {fileID: 1236626809847311915, guid: b60027232bd0e114b8718ec00e3375ec, type: 3}
+  - {fileID: 6079591077199543713, guid: bbf71dd8fdd9ca549a575e2a2054f6da, type: 3}
+  - {fileID: 6625727523942230898, guid: f61f4ecb02bb3984c892822dab76dfc2, type: 3}
+  totalGrowSeconds: 120

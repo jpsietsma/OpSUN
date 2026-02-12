@@ -29,6 +29,34 @@ public class InventorySystem : MonoBehaviour
 
     public ItemStack GetEquipped(EquipSlot slot) => equipped[slot];
 
+    public bool TryRemoveItem(ItemDefinition item, int amount)
+    {
+        if (item == null || amount <= 0) return false;
+
+        int remaining = amount;
+
+        for (int i = Items.Count - 1; i >= 0 && remaining > 0; i--)
+        {
+            var stack = Items[i];
+            if (stack == null || stack.item != item) continue;
+
+            int take = Mathf.Min(stack.count, remaining);
+            stack.count -= take;
+            remaining -= take;
+
+            if (stack.count <= 0)
+                Items.RemoveAt(i);
+        }
+
+        if (remaining == 0)
+        {
+            OnChanged?.Invoke();   // <-- legal here
+            return true;
+        }
+
+        return false;
+    }
+
     public bool TryAddItem(ItemDefinition item, int amount = 1)
     {
         if (item == null || amount <= 0) return false;

@@ -53,4 +53,13 @@ public class ItemDefinition : ScriptableObject
 
     [Tooltip("Amount of stamina to remove when consumed")]
     public float staminaDebuff;
+
+    [Header("Farming (optional)")]
+    public bool isSeed;
+
+    [Tooltip("What item you get when harvesting this crop (e.g., Potato item)")]
+    public ItemDefinition harvestResult;
+
+    [Tooltip("How many items you get when harvesting")]
+    public int harvestAmount = 2;
 }
