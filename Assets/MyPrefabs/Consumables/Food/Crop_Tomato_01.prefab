@@ -100,6 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4518812042423095609}
+  - component: {fileID: 3924279938284157167}
   m_Layer: 0
   m_Name: Crop_Tomato_01
   m_TagString: Untagged
@@ -124,6 +125,21 @@ Transform:
   - {fileID: 7681542024988928783}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3924279938284157167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164359748002971910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755d38e354b87cf42b0fb0e53ffcd1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldItemPickup
+  itemDefinition: {fileID: 11400000, guid: dc52d5753c9e6cb478b2c2c7b74c8232, type: 2}
+  amount: 1
+  inventory: {fileID: 0}
 --- !u!1 &9204309131083470755
 GameObject:
   m_ObjectHideFlags: 0

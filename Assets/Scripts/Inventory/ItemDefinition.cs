@@ -33,25 +33,25 @@ public class ItemDefinition : ScriptableObject
     [Tooltip("Amount of health to restore when consumed")]
     public float healthBuff;
 
-    [Tooltip("Amount of health to remove when consumed")]
+    [Tooltip("Amount of damage taken when consumed")]
     public float healthDebuff;
 
     [Tooltip("Amount of hunger to restore when consumed")]
     public float hungerBuff;
 
-    [Tooltip("Amount of hunger to remove when consumed")]
+    [Tooltip("Amount of hunger to add when consumed")]
     public float hungerDebuff;
 
     [Tooltip("Amount of thirst to restore when consumed")]
     public float thirstBuff;
 
-    [Tooltip("Amount of thirst to remove when consumed")]
+    [Tooltip("Amount of thirst to add when consumed")]
     public float thirstDebuff;
 
     [Tooltip("Amount of stamina to restore when consumed")]
     public float staminaBuff;
 
-    [Tooltip("Amount of stamina to remove when consumed")]
+    [Tooltip("Amount of stamina to cost when consumed")]
     public float staminaDebuff;
 
     [Header("Farming (optional)")]

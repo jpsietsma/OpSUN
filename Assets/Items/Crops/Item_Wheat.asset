@@ -27,7 +27,7 @@ MonoBehaviour:
   heldLocalScale: {x: 1, y: 1, z: 1}
   healthBuff: 0
   healthDebuff: 0
-  hungerBuff: 0
+  hungerBuff: 0.1
   hungerDebuff: 0
   thirstBuff: 0
   thirstDebuff: 0
