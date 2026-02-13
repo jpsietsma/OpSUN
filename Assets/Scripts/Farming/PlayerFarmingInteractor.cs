@@ -1,3 +1,4 @@
+using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,20 +20,17 @@ public class PlayerFarmingInteractor : MonoBehaviour
     [Tooltip("Optional harvest action (E or left click). If null, harvest will use E key fallback.")]
     [SerializeField] private InputActionReference harvestAction;
 
-    [Header("Held Item Provider")]
-    [Tooltip("Drag your Hotbar/Equipment script here that knows what the active item is.")]
-    [SerializeField] private MonoBehaviour heldItemProvider;
+    [Header("Debug")]
+    [SerializeField] private bool debugLogs = true;
+    [SerializeField] private bool allowRawMouseFallback = true; // bypass action maps if needed
 
     private IHeldItemProvider held;
 
     private void Awake()
     {
-        if (cam == null) cam = Camera.main;
-        if (inventory == null) inventory = GetComponentInChildren<InventorySystem>();
-
-        held = heldItemProvider as IHeldItemProvider;
-        if (heldItemProvider != null && held == null)
-            Debug.LogWarning("[PlayerFarmingInteractor] heldItemProvider does not implement IHeldItemProvider.");
+        held = GetComponentInChildren<IHeldItemProvider>(true);
+        if (held == null)
+            Debug.LogWarning("[PlayerFarmingInteractor] No IHeldItemProvider found in children (HeldItemController missing).");
     }
 
     private void OnEnable()
@@ -49,11 +47,18 @@ public class PlayerFarmingInteractor : MonoBehaviour
 
     private void Update()
     {
-        if (plantAction != null && plantAction.action.WasPressedThisFrame())
+        bool plantPressed =
+            (plantAction != null && plantAction.action != null && plantAction.action.WasPressedThisFrame()) ||
+            (allowRawMouseFallback && Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame);
+
+        if (plantPressed)
+        {
+            if (debugLogs) Debug.Log("[Farming] Plant pressed");
             TryPlant();
+        }
 
         bool harvestPressed =
-            (harvestAction != null && harvestAction.action.WasPressedThisFrame()) ||
+            (harvestAction != null && harvestAction.action != null && harvestAction.action.WasPressedThisFrame()) ||
             (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame);
 
         if (harvestPressed)
@@ -62,38 +67,102 @@ public class PlayerFarmingInteractor : MonoBehaviour
 
     private void TryPlant()
     {
-        if (!Raycast(out var hit)) return;
+        if (inventory == null)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] inventory is NULL");
+            return;
+        }
 
+        if (cam == null)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] cam is NULL");
+            return;
+        }
+
+        // 1) Raycast
+        if (!Raycast(out var hit))
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] Raycast hit NOTHING (range/mask/collider/camera issue)");
+            return;
+        }
+
+        if (debugLogs)
+            Debug.Log($"[Farming] Raycast hit: {hit.collider.name} (layer {LayerMask.LayerToName(hit.collider.gameObject.layer)})");
+
+        // 2) Find plot
         var plot = hit.collider.GetComponentInParent<CropPlot>();
-        if (plot == null || !plot.CanPlant) return;
+        if (plot == null)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] Hit object is NOT under a CropPlot (CropPlot component missing or not parent)");
+            return;
+        }
 
+        if (!plot.CanPlant)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] Plot found, but CanPlant = false (already planted?)");
+            return;
+        }
+
+        // 3) Held item
         var seedItem = held != null ? held.GetHeldItemDefinition() : null;
-        if (seedItem == null || !seedItem.isSeed) return;
-
-        if (seedDb == null || !seedDb.TryGetCrop(seedItem, out var cropDef) || cropDef == null)
+        if (seedItem == null)
         {
-            Debug.LogWarning($"[Farming] No crop mapping found for seed: {seedItem.name}");
+            if (debugLogs) Debug.LogWarning("[Farming] Held item is NULL (heldItemProvider not set or not implementing IHeldItemProvider)");
             return;
         }
 
-        // Consume 1 seed from inventory
-        if (!inventory.TryRemoveItem(seedItem, 1))
+        if (debugLogs) Debug.Log($"[Farming] Held item: {seedItem.name}, isSeed={seedItem.isSeed}");
+
+        if (!seedItem.isSeed)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] Held item is not marked isSeed");
             return;
-
-        if (plot.TryPlant(cropDef))
-        {
-            // planted successfully
-            var info = plot.GetComponent<CropPlotHarvestInfo>();
-            if (info == null) info = plot.gameObject.AddComponent<CropPlotHarvestInfo>();
-
-            info.harvestItem = seedItem.harvestResult;
-            info.harvestAmount = Mathf.Max(1, seedItem.harvestAmount);
         }
-        else
+
+        // 4) Seed -> Crop mapping
+        if (seedDb == null)
         {
-            // if planting failed, refund
+            if (debugLogs) Debug.LogWarning("[Farming] seedDb is NULL");
+            return;
+        }
+
+        if (!seedDb.TryGetCrop(seedItem, out var cropDef) || cropDef == null)
+        {
+            if (debugLogs) Debug.LogWarning($"[Farming] No crop mapping for seed: {seedItem.name}");
+            return;
+        }
+
+        if (debugLogs) Debug.Log($"[Farming] Found cropDef: {cropDef.name}");
+
+        // 5) Consume seed
+        //if (!inventory.TryRemoveItem(seedItem, 1))
+        //{
+        //    if (debugLogs) Debug.LogWarning("[Farming] TryRemoveItem failed (seed not actually in inventory?)");
+        //    return;
+        //}
+
+        // Consume 1 seed from inventory WITHOUT shrinking the Items list
+        if (!ConsumeItem_NoShrink(seedItem, 1))
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] ConsumeItem_NoShrink failed (seed not in inventory?)");
+            return;
+        }
+
+        // 6) Plant
+        if (!plot.TryPlant(cropDef))
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] plot.TryPlant failed (refunding seed)");
             inventory.TryAddItem(seedItem, 1);
+            return;
         }
+
+        // 7) Save harvest info
+        var info = plot.GetComponent<CropPlotHarvestInfo>();
+        if (info == null) info = plot.gameObject.AddComponent<CropPlotHarvestInfo>();
+        info.harvestItem = seedItem.harvestResult;
+        info.harvestAmount = Mathf.Max(1, seedItem.harvestAmount);
+
+        if (debugLogs) Debug.Log("[Farming] PLANTED SUCCESS");
     }
 
     private void TryHarvest()
@@ -124,6 +193,39 @@ public class PlayerFarmingInteractor : MonoBehaviour
 
         inventory.TryAddItem(harvestInfo.harvestItem, harvestInfo.harvestAmount);
         plot.ClearPlot();
+    }
+
+    private bool ConsumeItem_NoShrink(ItemDefinition item, int amount)
+    {
+        if (inventory == null || item == null || amount <= 0) return false;
+        if (inventory.Items == null) return false;
+
+        int remaining = amount;
+
+        // IMPORTANT: do NOT RemoveAt() — keep list size stable for InventoryUI
+        for (int i = 0; i < inventory.Items.Count && remaining > 0; i++)
+        {
+            var stack = inventory.Items[i];
+            if (stack == null) continue;
+
+            if (stack.item != item) continue;
+            if (stack.count <= 0) continue;
+
+            int take = Mathf.Min(stack.count, remaining);
+            stack.count -= take;
+            remaining -= take;
+
+            // If stack is now empty, keep the slot but clear it
+            if (stack.count <= 0)
+            {
+                stack.count = 0;
+                stack.item = null;
+            }
+        }
+
+        // We intentionally do NOT invoke inventory.OnChanged here (can't from outside).
+        // Your UI already refreshes on open (and your inventory likely refreshes elsewhere).
+        return remaining == 0;
     }
 
     private bool Raycast(out RaycastHit hit)

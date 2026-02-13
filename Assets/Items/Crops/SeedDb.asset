@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SeedDb
   m_EditorClassIdentifier: Assembly-CSharp::SeedToCropDatabase
   entries:
-  - seedItem: {fileID: 0}
+  - seedItem: {fileID: 11400000, guid: 6a901f54366d1cb47b84e75fd8973290, type: 2}
     crop: {fileID: 11400000, guid: 7d7a6d565701ccd4e890265be41661c6, type: 2}
-  - seedItem: {fileID: 0}
+  - seedItem: {fileID: 11400000, guid: a9fbfa42626a6be4babd9e83aef4c143, type: 2}
     crop: {fileID: 11400000, guid: 2eb9408fa58996446a65fa36b28614fa, type: 2}
-  - seedItem: {fileID: 0}
+  - seedItem: {fileID: 11400000, guid: 9f83abc1e8d516549a11e1b92cb5608d, type: 2}
     crop: {fileID: 11400000, guid: dc88089f82423ba42a9c176f51c633e3, type: 2}

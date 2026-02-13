@@ -246,6 +246,43 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!84 &567168785
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 64
+  m_Height: 64
+  m_AntiAliasing: 4
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1743128892
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +337,8 @@ MonoBehaviour:
   AutoOrientate: 1
   AutoOrientationSetting:
     Direction: 0
-    DesiredOrientationOffset: {x: -15, y: 145, z: 0}
-  CaptureDepth: 0.3225011
+    DesiredOrientationOffset: {x: 15, y: 130, z: -75}
+  CaptureDepth: 1.1758629
   FovManipulationValue: 15
   PingAssetOnSave: 1
   AutoSelectAssetOnSave: 0
@@ -310,11 +347,11 @@ MonoBehaviour:
   GizmoFrontToEndDepth: 2
   DefaultFOV: 60
   SelectedSavePath: C:/Users/jpsie/Desktop/Unity Projects/First Game/First Game Demo/Assets/MySprites/Icons
-  PreviewRenderTexture: {fileID: 2109599823}
+  PreviewRenderTexture: {fileID: 567168785}
   Camera: {fileID: 2047497870}
   PreviewCamera: {fileID: 1799176909}
-  CurrentChild: {fileID: 0}
-  LastChild: {fileID: 0}
+  CurrentChild: {fileID: 2101913573}
+  LastChild: {fileID: 2101913573}
 --- !u!4 &1743128894
 Transform:
   m_ObjectHideFlags: 0
@@ -390,7 +427,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 2109599823}
+  m_TargetTexture: {fileID: 567168785}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -441,10 +478,11 @@ Transform:
   m_GameObject: {fileID: 2031162576}
   serializedVersion: 2
   m_LocalRotation: {x: -0.9238782, y: -0, z: -0, w: 0.38268682}
-  m_LocalPosition: {x: 0, y: 0, z: 0.3547512}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2934493}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2101913573}
   m_Father: {fileID: 1743128894}
   m_LocalEulerAnglesHint: {x: -855, y: 0, z: 0}
 --- !u!114 &2031162578
@@ -601,43 +639,68 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!84 &2109599823
-RenderTexture:
+--- !u!1001 &2101913572
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2031162577}
+    m_Modifications:
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3610516
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26812458
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.46441245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5645865
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.047996305
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6080205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.55610204
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976762744610051569, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+      propertyPath: m_Name
+      value: Crop_Wheat_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+--- !u!4 &2101913573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6023121402688304659, guid: 9efdac16d25455b4bb2b12c55b8f48a2, type: 3}
+  m_PrefabInstance: {fileID: 2101913572}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 64
-  m_Height: 64
-  m_AntiAliasing: 4
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

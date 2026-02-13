@@ -18,4 +18,4 @@ MonoBehaviour:
   - {fileID: 3563361786436436679, guid: ff23f2b515114944fb771c49fad2c4b5, type: 3}
   - {fileID: 797777474303122317, guid: 8323ac922e91fce4a82d7c48813a8cd0, type: 3}
   - {fileID: 48173721420424425, guid: b4f5135c79e4a7a4eaaabd27f92b567a, type: 3}
-  totalGrowSeconds: 120
+  totalGrowSeconds: 30

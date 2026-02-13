@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &4172086574474858251
 Transform:
@@ -55,7 +55,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 4
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
@@ -146,6 +146,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b73ed98a7a4ff594aa88607907596b46, type: 3}
       propertyPath: m_Name
       value: Crop_Wheat_Stage_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b73ed98a7a4ff594aa88607907596b46, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

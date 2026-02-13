@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2939454856024922883
 Transform:
@@ -55,7 +55,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 4
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
@@ -166,6 +166,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 84f7ef12b83ea534fb9571ad2f0e1c79, type: 3}
       propertyPath: m_Name
       value: Crop_Carrots_Stage_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84f7ef12b83ea534fb9571ad2f0e1c79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

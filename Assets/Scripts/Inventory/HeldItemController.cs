@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HeldItemController : MonoBehaviour
+public class HeldItemController : MonoBehaviour, IHeldItemProvider
 {
     [Header("Refs")]
     [SerializeField] private HotbarUI hotbar;
@@ -44,6 +44,13 @@ public class HeldItemController : MonoBehaviour
     private void OnHotbarSelectionChanged(int _)
     {
         RefreshHeldFromSelection();
+    }
+
+    public ItemDefinition GetHeldItemDefinition()
+    {
+        // return the ItemDefinition of the currently active hotbar slot
+        // (whatever your system calls it)
+        return currentItem;
     }
 
     private void RefreshHeldFromSelection()

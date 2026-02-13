@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Item_SeedWheat
   m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
   displayName: Wheat Seed
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b3fef1b189965ec46beb1f2e1dbe1b8a, type: 3}
   itemType: 7
   equipSlot: 0
   maxStack: 1
   description: Seeds to grow wheat. Takes 2 days to grow. Each plant produces 2 wheat.
   extraSlots: 0
-  worldPrefab: {fileID: 0}
+  worldPrefab: {fileID: 3738832237078374156, guid: c2d526ad5acc1264c9295f8cb2b00cf2, type: 3}
   worldTint: {r: 1, g: 1, b: 1, a: 1}
-  heldPrefab: {fileID: 0}
+  heldPrefab: {fileID: 3738832237078374156, guid: c2d526ad5acc1264c9295f8cb2b00cf2, type: 3}
   heldLocalPosition: {x: 0, y: 0, z: 0}
   heldLocalEuler: {x: 0, y: 0, z: 0}
   heldLocalScale: {x: 1, y: 1, z: 1}
@@ -34,5 +34,5 @@ MonoBehaviour:
   staminaBuff: 0
   staminaDebuff: 0
   isSeed: 1
-  harvestResult: {fileID: 0}
+  harvestResult: {fileID: 11400000, guid: dba261620cd5c534cbef0a07791932b2, type: 2}
   harvestAmount: 2
