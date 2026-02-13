@@ -1,3 +1,5 @@
+using System;
+using System.Reflection;
 using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -148,6 +150,8 @@ public class PlayerFarmingInteractor : MonoBehaviour
             return;
         }
 
+        ForceInventoryRefresh();
+
         // 6) Plant
         if (!plot.TryPlant(cropDef))
         {
@@ -226,6 +230,32 @@ public class PlayerFarmingInteractor : MonoBehaviour
         // We intentionally do NOT invoke inventory.OnChanged here (can't from outside).
         // Your UI already refreshes on open (and your inventory likely refreshes elsewhere).
         return remaining == 0;
+    }
+
+    private void ForceInventoryRefresh()
+    {
+        if (inventory == null) return;
+
+        try
+        {
+            // InventorySystem has: public event Action OnChanged;
+            // Outside classes can't invoke it normally, so we invoke the backing delegate via reflection.
+            var t = inventory.GetType();
+            var field = t.GetField("OnChanged", BindingFlags.Instance | BindingFlags.NonPublic);
+
+            if (field == null)
+            {
+                if (debugLogs) Debug.LogWarning("[Farming] ForceInventoryRefresh: couldn't find OnChanged field via reflection.");
+                return;
+            }
+
+            var del = field.GetValue(inventory) as Delegate;
+            del?.DynamicInvoke();
+        }
+        catch (Exception e)
+        {
+            if (debugLogs) Debug.LogWarning("[Farming] ForceInventoryRefresh failed: " + e.Message);
+        }
     }
 
     private bool Raycast(out RaycastHit hit)
